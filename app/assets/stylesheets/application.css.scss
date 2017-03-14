@@ -1,0 +1,152 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+body{
+  font-family: 'Unica One', cursive;
+  text-color: black;
+  padding: 0px;
+}
+
+h1{
+  font-size: 3.5em;
+  color: black;
+}
+
+.admin-navbar{
+  margin-top: 45px;
+}
+
+.navbar_admin_links a{
+  color: white;
+}
+
+.show_date{
+  color: red;
+}
+
+.show_body{
+  font-size: 1.25em;
+  line-height: 130%;
+}
+
+.show_title{
+  font-size: 7em;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  padding-left: 0px;
+}
+
+.show_category{
+  font-size: 1.25em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+a:hover{
+  text-decoration: none;
+  color: red;
+  background-color: white;
+}
+
+p{
+  font-family: 'Arapey', serif;
+}
+
+.small-title{
+  font-family: 'Arapey', serif;
+  text-align: center;
+  padding: 0px 5px 0px 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sidebar{
+  border-left: .25px solid black;
+  padding: 0 20px 0 20px;
+}
+
+.page_wrapper{
+  margin-top: 75px;
+}
+
+.excerpt{
+  margin-top: 0;
+  font-family: 'Arapey', serif;
+}
+
+.no-gutter [class*="-2"] {
+    padding-left:0;
+    padding-right:0;
+    margin-top: -12px;
+}
+
+.date{
+  color: red;
+  margin: 15px 0px -15px 0px;
+  font-family: 'Arapey', serif;
+}
+
+.ad{
+  margin-bottom: 45px;
+}
+
+.logo img{
+  margin-left: 110%;
+  margin-top: 25px;
+  margin-bottom: -25px;
+}
+
+.footer{
+  margin: 0 -9999rem;
+  background-color: lightgrey;
+  height: 150px;
+  margin-top: 50px;
+}
+
+.category{
+  color: black;
+}
+
+.author{
+  margin-bottom: 50px;
+  font-family: 'Arapey', serif;
+}
+
+.border{
+  border-top: 1px dotted black;
+  padding: 0px;
+}
+
+.padding{
+  padding: 0px;
+}
+
+.full-width{
+  width: 100%;
+  padding: 0px;
+}
+
+.must-reads{
+  border-top: 10px solid black;
+  margin-top: 25px;
+}
+
+.must-reads h2{
+  text-align: center;
+  font-size: 2.5em;
+}

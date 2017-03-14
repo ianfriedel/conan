@@ -1,0 +1,7 @@
+<div class="row no-gutter">
+  <% @topsix.each do |post| %>
+    <div class="col-md-2"><%= image_tag post.image.url(:large), class: "img-responsive"%>
+      <h6 class="small-title"><%= link_to post.title, post %></h6>
+    </div>
+  <% end %>
+</div>

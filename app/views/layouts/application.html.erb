@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conan</title>
+    <%= csrf_meta_tags %>
+
+    <link href="https://fonts.googleapis.com/css?family=Arapey:400,400i" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+
+    <script src="https://cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= render 'layouts/navbar' %>
+    <%= yield %>
+  </body>
+</html>

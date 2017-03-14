@@ -1,0 +1,9 @@
+<div class="container must-reads">
+  <h2 class="mini-title">Must Reads for January</h2>
+  <div class="row no-gutter">
+    <% @first4.each do |post| %>
+      <div class="col-md-3"><%= image_tag post.image.url(:large), class: "img-responsive"%>
+        <h5 class="small-title"><%= link_to post.title, post %></h5>
+      </div>
+    <% end %>
+</div>

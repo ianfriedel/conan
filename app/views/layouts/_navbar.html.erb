@@ -1,0 +1,26 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Breakfast", breakfast_path %></li>
+      <li><%= link_to "Lunch", lunch_path %></li>
+      <li><%= link_to "Dinner", dinner_path %></li>
+      <li><%= link_to "Appetizers", appetizer_path %></li>
+      <li><%= link_to "Dessert", desserts_path %></li>
+      <li><%= link_to "Drinks", drinks_path %></li>
+
+    </ul>
+  </div>
+</nav>
+
+<% if admin_signed_in? %>
+<nav class="navbar admin-navbar" style="background-color: #fe0000;">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="navbar_admin_links"><%= link_to "New Post", new_post_path %></li>
+      <li class="navbar_admin_links"><%= link_to "Sign-Up", new_user_registration_path %></li>
+      <li class="navbar_admin_links"><%= link_to "Sign-Out", destroy_user_session_path, method: :delete %></li>
+    </ul>
+  </div>
+</nav>
+<% end %>

@@ -1,0 +1,13 @@
+<div class="col-md-4">
+  <p><%= image_tag('wendy.jpg', class: 'img-responsive pull-right ad') %></p>
+</div>
+
+<div class="col-md-4">
+  <div class="sidebar">
+    <h2>Bacon Drinks:</h2>
+    <% @posts.drinks.each do |post| %>
+      <%= image_tag post.image.url(:thumb), class: "img-responsive" %>
+      <h5 class="small-title"><%= link_to post.title, post %></h5></br></br>
+    <% end %>
+  </div>
+</div>

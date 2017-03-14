@@ -1,0 +1,25 @@
+<div class="container">
+  <%= render 'home/topsix' %>
+</div>
+
+<div class="container page_wrapper">
+  <div class="row">
+    <div class="col-md-8">
+      <p id="notice"><%= notice %></p>
+
+      <p class="show_date"><%= @post.create_date %></p>
+      <h1 class="show_title"><%= @post.title %></h1>
+      <h4><%= @post.excerpt %></h4>
+      <%= image_tag @post.image.url(:medium) %>
+      <p><%= @post.author %></p>
+      <p class="show_body"><%= @post.body %></p>
+      <p class="well show_category"><%= @post.category.name %></p>
+
+        <%= link_to 'Edit', edit_post_path(@post) %> |
+        <%= link_to 'Back', posts_path %>
+    </div>
+
+    <%= render 'home/sidebar' %>
+
+  </div>
+</div>

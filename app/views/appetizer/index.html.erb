@@ -1,0 +1,14 @@
+<div class="container page_wrapper">
+
+  <div class="col-md-8">
+    <h1>appetizer:</h1>
+      <% @posts.appetizer.each do |post| %>
+        <%= image_tag post.image.url(:large), class: "img-responsive" %>
+        <p class="date"><%= post.category.name %></p>
+        <h1><%= link_to post.title, post %></h1>
+        <h3 class="excerpt"><%= post.excerpt %></h3>
+        <h5 class="author">by: <%= post.author %></h5>
+      <% end %>
+  </div>
+
+</div>
