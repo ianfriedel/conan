@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 
+gem 'seed_dump'
 #devise gem
 gem 'devise'
 #Paperclip gem
